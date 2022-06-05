@@ -80,14 +80,23 @@ body {
 }
 
 .hero-bottom-section .category {
+    margin: 0 2rem;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    
+    width: 15%;
+    height: 70%;
+    
+    background-color: rgba(0, 187, 255, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 2rem;
-    width: 15%;
-    height: 70%;
-    border-radius: 10px;
-    background-color: grey;
+
+    cursor: pointer;
 }
 
 .hero-bottom-section .category:nth-of-type(1) {
@@ -111,6 +120,7 @@ body {
 }
 
 .hero-bottom-section .category img {
+    display: block;
     margin: auto;
     width: 60%;
 }
