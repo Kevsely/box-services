@@ -8,6 +8,7 @@
 }
 
 body {
+    position: relative;
     margin: 0;
     box-sizing: border-box;
     width: 100%;
@@ -21,90 +22,29 @@ body {
 /* Hero Section */
 .hero-section {
     position: relative;
+}
+
+/* Hero Background */
+.hero-section .hero-background {
     width: 100%;
+    height: 80vh;
+    background-image: url("/assets/img/noel-broda-sigzPF1sT7k-unsplash.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* Hero Text */
+.hero-section .hero-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(to right bottom, #02567a, #046e9a, #0687ba, #05a1dc, #00bcff);
-}
-
-.hero-section .top-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-}
-
-.hero-text {
-    margin-left: 70px;
-    width: 30%;
-    font-size: 20px;
-}
-
-.hero-text h1 {
-    margin: 0;
-    text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
-    font-size: 40px;
-}
-
-.hero-text span {
-    display: inline-block;
-    padding: 1rem;
-    background-color: var(--color-4);
-    border-radius: 15px;
-}
-
-.hero-carousel {
-    width: 50%;
-}
-
-.hero-carousel img{
-    height: 100%;
-    width: 100%;
-}
-
-/* Hero Categories */
-.bottom-section {
-    display: flex;
-    flex-direction: column;
-    height: 40%;
-    justify-content: stretch;
-    align-items: center;
-}
-
-.bottom-section h2 {
-    margin: auto;
-    height: 20%;
-    text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
-    font-size: 30px;
-}
-
-.bottom-section .categories {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 80%;
-    text-align: center;
-}
-
-.bottom-section .category {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 15%;
-    height: 100%;
-}
-
-.bottom-section .category img {
-    margin: auto;
-    width: 80%;
-}
-
-.bottom-section .category h3 {
-    width: fit-content;
-    margin: 1rem auto;
-    padding: 1rem;
-    border-radius: 15px;
-    /* text-transform: uppercase; */
-    background-color: var(--color-4);
-    font-family: "Josefin Sans", sans-serif;
+    background-opacit
 }
