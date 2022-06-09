@@ -28,13 +28,28 @@ body {
     overflow-x: hidden;
 }
 
-div h2 {
+section {
+    position: relative;
+    margin: auto 20%;
+    padding: 0 50px;
+    overflow: hidden;
+}
+
+section h2 {
     color: var(--color-1);
     text-transform: uppercase;
     text-align: center;
     font-family: var(--secondary-font);
     font-size: 30px;
 }
+
+section .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 div h3 {
     color: var(--color-1);
@@ -158,6 +173,10 @@ HERO SECTION
     width: 60%;
 }
 
+.hero-bottom-section .category h3 {
+    color: var(--color-3);
+}
+
 .hero-bottom-section .category a {
     display: block;
     width: fit-content;
@@ -183,20 +202,8 @@ HERO SECTION
 /*----------------------------------------------------------
 OUR STATS
 ----------------------------------------------------------*/
-.stats {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.stats .stats-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.stats .stats-wrapper .stat {
+.stats .wrapper .stat {
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -220,12 +227,14 @@ OUR STATS
     color: var(--color-1);
 }
 
+
+
 /*----------------------------------------------------------
 PRODUCTS PROOF
 ----------------------------------------------------------*/
-.products-proof {
-    /* box-sizing: border-box; */
-    margin: auto 20%;
+
+.products-proof .wrapper {
+    flex-direction: column;
 }
 
 .products-proof .product-section {
@@ -264,6 +273,23 @@ PRODUCTS PROOF
     color: var(--color-1);
     font-weight: 400;
     vertical-align: top;
+}
+
+.proofs a > h3 {
+    color: var(--color-3);
+    margin: 0;
+}
+
+.proofs a {
+    display: block;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: var(--color-4);
+    font-family: var(--main-font);
+    font-size: 14px;
 }
 
 /* Product section */
@@ -306,6 +332,83 @@ PRODUCTS PROOF
     z-index: -1;
 }
 
+/*----------------------------------------------------------
+TESTIMONIALS
+----------------------------------------------------------*/
+.testimonials .fa-solid {
+    position: absolute;
+    color: var(--color-1);
+    font-size: 40px;
+}
+
+.testimonials .fa-circle-chevron-left {
+    left: 1px;
+    top: 50%;
+}
+
+.testimonials .fa-circle-chevron-right {
+    right: 1px;
+    top: 50%;
+}
+
+.testimonials .testimonial-card {
+    height: 40vh;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.3);
+}
+
+.testimonials .testimonial {
+    height: 70%;
+    display: flex;
+}
+
+.testimonials .testimonial .text {
+    position: relative;
+    margin: auto;
+    padding: 1rem;
+    height: fit-content;
+}
+
+.testimonials .quote{
+    position: absolute;
+    right: 0;
+    font-size: 400%;
+    opacity: .1;
+    transform: rotate(10deg) translate(-10px, -40px);
+    color:#4D3FA3;
+}
+
+.testimonials .footer{
+    position:relative;
+    background: linear-gradient(90deg, #1a2B96 0%, #d22B96 100%);
+    height: 30%;
+    border-radius: 0 0 10px 10px;    
+}
+
+.testimonials .image{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    box-sizing: border-box;
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 12vh;
+    width: 12vh;
+    background:no-repeat center/cover url(https://images.unsplash.com/photo-1563715992566-7ad5cf5b71d3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    transform: translateX(-50%);
+}
+
+.testimonials .person{
+    color:white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size:1.5rem;
+    font-weight: 600;
+}
 
 /*----------------------------------------------------------
 ANIMATIONS
