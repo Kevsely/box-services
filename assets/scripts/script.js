@@ -2,7 +2,7 @@ const statsEl = document.getElementsByClassName("counting")
 console.log(statsEl)
 
 // Tilt function on categorie selector
-VanillaTilt.init(document.querySelectorAll(".hero-bottom-section .category"), {
+VanillaTilt.init(document.querySelectorAll(".hero .categories .category"), {
     max: 25,
     speed: 400, 
     glare: true,
