@@ -397,6 +397,11 @@ PRODUCTS PROOF
 /*----------------------------------------------------------
 TESTIMONIALS
 ----------------------------------------------------------*/
+.testimonials {
+    margin-bottom: 5rem;
+    overflow: visible;
+}
+
 .testimonials .fa-solid {
     position: absolute;
     color: var(--color-1);
@@ -470,6 +475,31 @@ TESTIMONIALS
     transform: translate(-50%, -100%);
     font-size:1.5rem;
     font-weight: 600;
+}
+
+/*----------------------------------------------------------
+FOOTER
+----------------------------------------------------------*/
+footer {
+    background-color: grey;
+    padding: 1rem 20%;
+    font-size: 16px;
+}
+
+footer .top-div a {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color-3);
+}
+
+footer .top-div {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 /*----------------------------------------------------------
