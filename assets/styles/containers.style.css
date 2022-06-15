@@ -92,8 +92,8 @@ section.results {
 }
 
 .results .result {
+    display: none;
     margin: 0.5rem;
-    /* border: 1px solid red; */
     border-radius: 15px;
     box-sizing: border-box;
     width: 23.65%;
@@ -103,6 +103,10 @@ section.results {
     justify-content: center;
     align-items: center;
     background-color: white;
+}
+
+.results .result .show {
+    display: block;
 }
 
 .results .result:hover {
@@ -146,6 +150,7 @@ section.results {
     color: var(--color-3);
     font-family: var(--main-font);
     font-size: 20px;
+    cursor: pointer;
 }
 
 .results .result:hover button {
