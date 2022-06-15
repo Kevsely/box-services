@@ -98,15 +98,14 @@ section.results {
     box-sizing: border-box;
     width: 23.65%;
     min-height: 60vh;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
 }
 
-.results .result .show {
-    display: block;
+.results .result.show {
+    display: flex;
 }
 
 .results .result:hover {

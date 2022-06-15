@@ -44,3 +44,6 @@ inputCtnType.forEach((ctnTypeRadio) => {
         if (ctnTypeRadio.checked) filterSelection(ctnTypeRadio.value)
     })
 })
+
+// On load
+filterSelection("all")
