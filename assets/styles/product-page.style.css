@@ -1,0 +1,118 @@
+/* body {
+    color: var(--color-1)!important;
+} */
+
+.product-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: auto 20%;
+}
+
+div h2 {
+    margin-top: 1rem;
+    color: var(--color-1);
+    font-family: var(--secondary-font);
+}
+
+/*----------------------------------------------------------
+TOP SECTION
+----------------------------------------------------------*/
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Product carousel */
+.top-section .product-carousel {
+    width: 55%;
+}
+
+/* Product CTA */
+.top-section .cta {
+    width: 40%;
+}
+
+.top-section .cta h1 {
+    margin-bottom: 0.5rem;
+    font-family: var(--secondary-font);
+    color: var(--color-1);
+}
+
+.top-section .cta .details {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.top-section .cta .starting-price {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.top-section .cta .starting-price strong {
+    display: inline-block;
+    margin: auto 0.5rem;
+    color: var(--color-1);
+    font-family: var(--secondary-font);
+    font-size: 30px;
+}
+
+.top-section .cta button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-4);
+    color: var(--color-3);
+    font-family: var(--main-font);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*----------------------------------------------------------
+BULLET POINTS SECTION
+----------------------------------------------------------*/
+.bullets-section {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bullets-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bullets-section div i {
+    font-size: 40px;
+}
+
+.bullets-section div .title {
+    color: gray;
+}
+
+.bullets-section div .value {
+    font-weight: 600;
+}
+
+/*----------------------------------------------------------
+DIMENSIONS
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+TECHNICAL INFOS
+----------------------------------------------------------*/
+.technical-infos-section {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.technical-infos-section span {
+    /* display: inline-block; */
+}
