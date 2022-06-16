@@ -103,6 +103,34 @@ BULLET POINTS SECTION
 /*----------------------------------------------------------
 DIMENSIONS
 ----------------------------------------------------------*/
+.dimensions-section .table {
+    border: 1px solid rgb(169, 169, 169);
+    padding: 1rem;
+    border-collapse: separate;
+}
+
+.dimensions-section .table th.dim {
+    color: var(--color-1);
+}
+
+.dimensions-section .table th {
+    color: rgb(169, 169, 169);
+    text-align: center;
+}
+
+.dimensions-section .table td {
+    text-align: center ;
+    vertical-align: middle;
+}
+
+.dimensions-section .table .border-left {
+    border-left: 1px solid rgb(169, 169, 169);
+}
+
+.dimensions-section .table tr:last-child td, 
+.dimensions-section .table tr:last-child th {
+    border-bottom: none;
+}
 
 /*----------------------------------------------------------
 TECHNICAL INFOS
