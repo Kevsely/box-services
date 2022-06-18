@@ -36,7 +36,6 @@ function filterSelection(productFilter) {
         for(var j = 0; j < productFilter.length; j++) {
             if (resultsToFilter[i].className.indexOf(productFilter[j]) > -1) {
                 showFilteredElements(resultsToFilter[i], "show")
-                console.log(resultsToFilter[i], "has been showned")
             }
         }
     }
@@ -50,7 +49,6 @@ inputAccessoryType.forEach((accessoryTypeCheckbox) => {
         } else {
             currentFilter = currentFilter.filter(newFilter => newFilter !== accessoryTypeCheckbox.value)
         }
-        console.log(currentFilter)
         filterSelection(currentFilter)
     })
 })

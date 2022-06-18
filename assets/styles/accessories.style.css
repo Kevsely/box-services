@@ -130,18 +130,33 @@ section.results {
     font-weight: 400;
 }
 
-.results .result span:not(.name) {
+.results .result label {
     display: none;
 }
 
-.results .result:hover span:not(.name) {
-    display: inline;
-    color: grey;
+.results .result:hover label {
+    display: block;
+    color: var(--color-1);
+}
+
+.results .result:hover label input {
+    outline: none;
+}
+
+.results .result div {
+    display: none;
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.results .result:hover div {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 }
 
 .results .result button {
-    display: none;
-    margin: 1rem 0;
+    margin: 0.3rem 0;
     padding: 0.5rem;
     border: none;
     border-radius: 10px;
