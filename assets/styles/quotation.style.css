@@ -1,0 +1,106 @@
+/*----------------------------------------------------------
+GENERAL
+----------------------------------------------------------*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    color: var(--color-1);
+}
+
+.quotation-page-wrapper {
+    margin: 0 20%;
+}
+
+/*----------------------------------------------------------
+QUOTATION TABLE
+----------------------------------------------------------*/
+h1 {
+    font-family: var(--secondary-font);
+    text-align: center;
+    text-decoration: underline;
+}
+
+table.quotation {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.quotation img {
+    width: 7rem;
+}
+
+.quotation tr {
+    border-bottom: 1px solid grey;
+}
+
+.quotation td {
+    text-align: center;
+}
+
+.quotation tfoot td:nth-child(odd) {
+    text-align: right;
+}
+
+/*----------------------------------------------------------
+WARNING
+----------------------------------------------------------*/
+.warning {
+    display: block;
+    margin: 2rem 0;
+    font-size: 25px;
+    text-align: center;
+    color: red;
+}
+
+/*----------------------------------------------------------
+DESCRIPTION
+----------------------------------------------------------*/
+h2 {
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+}
+
+.project-description {
+    width: 100%;
+}
+
+/*----------------------------------------------------------
+ADDRESSES
+----------------------------------------------------------*/
+.address-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 1rem;
+}
+
+.address-wrapper label {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+/*----------------------------------------------------------
+CGV
+----------------------------------------------------------*/
+.cgv {
+    display: block;
+    margin: 1rem 0;
+}
+
+/*----------------------------------------------------------
+SEND MY REQUEST
+----------------------------------------------------------*/
+button.send-my-request {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem 0;
+    background-color: var(--color-4);
+    width: 100%;
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    color: white;
+}
