@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon projet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/styles/quotation.style.css">
+</head>
+<body>
+    <div class="quotation-page-wrapper">
+        <!-- Quotation table -->
+        <table class="quotation">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Aperçu</th>
+                    <th>Désignation</th>
+                    <th>Prix Unit. <br>(estimé)</th>
+                    <th>Quantité</th>
+                    <th>Prix Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td><img src="assets/img/container1.png" alt=""></td>
+                    <td>Conteneur maritime de stockage « standard » 6 pieds</td>
+                    <td>3900€</td>
+                    <td>02</td>
+                    <td>7800€</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total Hors Taxes</td>
+                    <td>0.00€</td>
+                </tr>
+                <tr>
+                    <td colspan="5">Frais de port</td>
+                    <td>Sur Devis</td>
+                </tr>
+                <tr>
+                    <td colspan="5">Total TTC</td>
+                    <td>0.00€</td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- Warning -->
+        <span class="warning">Ceci est une <strong>estimation</strong>. Veullez remplir le formulaire ci-dessous pour recevoir un devis plus précis</span>
+        <!-- Order description -->
+        <h2>Description de mon projet</h2>
+        <textarea class="project-description" cols="30" rows="10"></textarea>
+        <!-- Billing and Shipping Address -->
+        <div class="address-wrapper">
+
+        </div>
+        <!-- CGV -->
+        <input type="checkbox" name="cgv-approve" id="cgv-approve">
+        <!-- Send the request -->
+        <button>Demander le devis final</button>
+    </div>
+</body>
+</html>
