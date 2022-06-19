@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/animations.style.css">
     <link rel="stylesheet" href="assets/styles/navbar.style.css">
@@ -33,18 +36,18 @@
         <div class="right-section">
             <i class="fa-solid fa-cart-shopping"></i>
             <span>Je décris mon projet</span>
-            <a href="#"></a>
+            <a href="quotation.html"></a>
         </div>
     </nav>
     <!-- Hero Section -->
     <div class="hero-section">
         <!-- Hero Text -->
-        <div class="hero-text">
+        <div class="hero-text" data-aos="fade-down-right" data-aos-delay="0">
             <h1>Containers maritimes : Des solutions et services sur mesure</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis rerum magnam quas quidem. Blanditiis, doloremque expedita officiis possimus in fugit culpa recusandae iste neque incidunt quo distinctio nemo, dicta voluptatem.</p>
         </div>
         <!-- Hero Carousel -->
-        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-down-left" data-aos-delay="300">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/img/container1.png" class="d-block w-100" alt="...">
@@ -69,21 +72,21 @@
     <!-- Hero Categories -->
     <div class="section-background hero">
         <section class="categories">
-            <div class="category">
+            <div class="category"  data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400">
                 <img src="assets/img/conteneurs-amenages.png" alt="">
-                <a href="#"><h3>Containers standards</h3></a>
+                <a href="containers.html"><h3>Containers standards</h3></a>
             </div>
-            <div class="category">
+            <div class="category"  data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400">
                 <img src="assets/img/conteneurs-amenages.png" alt="">
-                <a href="#"><h3>Containers aménagés</h3></a>
+                <a href="custom-layout.html"><h3>Containers aménagés</h3></a>
             </div>
-            <div class="category">
+            <div class="category"  data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
                 <img src="assets/img/conteneurs-amenages.png" alt="">
-                <a href="#"><h3>Accessoires containers</h3></a>
+                <a href="accessories.html"><h3>Accessoires containers</h3></a>
             </div>
-            <div class="category">
+            <div class="category"  data-aos="fade-up-left" data-aos-duration="2000" data-aos-delay="400">
                 <img src="assets/img/conteneurs-amenages.png" alt="">
-                <a href="#"><h3>Je décris mon projet</h3></a>
+                <a href="quotation.html"><h3>Je décris mon projet</h3></a>
             </div>
         </section>
     </div>
@@ -118,19 +121,19 @@
     <section class="bullets-section">
         <h2>Pourquoi nous choisir ?</h2>
         <div class="wrapper">
-            <div class="bullet-point">
+            <div class="bullet-point" data-aos="fade-down-right" data-aos-duration="2000" data-aos-delay="100">
                 <i class="fa-solid fa-coffee"></i>
                 <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> </p>
             </div>
-            <div class="bullet-point">
+            <div class="bullet-point" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
                 <i class="fa-solid fa-coffee"></i>
                 <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> </p>
             </div>
-            <div class="bullet-point">
+            <div class="bullet-point" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">
                 <i class="fa-solid fa-coffee"></i>
                 <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> </p>
             </div>
-            <div class="bullet-point">
+            <div class="bullet-point" data-aos="fade-up-left" data-aos-duration="2000" data-aos-delay="700">
                 <i class="fa-solid fa-coffee"></i>
                 <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> </p>
             </div>
@@ -143,7 +146,7 @@
             <div class="wrapper">
                 <!-- Containers standards -->
                 <div class="product-section" id="ctn-standards">
-                    <div class="proofs">
+                    <div class="proofs" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
                         <h3>Contenairs standards</h3>
                         <div>
                             <div>
@@ -165,7 +168,7 @@
                         </div>
                         <a href="#"><h3>Containers aménagés</h3></a>
                     </div>
-                    <div class="product">
+                    <div class="product" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="300">
                         <div class="img-container">
                             <img src="assets/img/container1.png" alt="">
                         </div>
@@ -178,7 +181,7 @@
                 </div>
                 <!-- Containers aménagés -->
                 <div class="product-section" id="ctn-amenages">
-                    <div class="product">
+                    <div class="product" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="300">
                         <div class="img-container">
                             <img src="assets/img/container1.png" alt="">
                         </div>
@@ -188,7 +191,7 @@
                         </div>
                         <div class="bottom-band"></div>
                     </div>
-                    <div class="proofs">
+                    <div class="proofs" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
                         <h3>Contenairs standards</h3>
                         <div>
                             <div>
@@ -213,7 +216,7 @@
                 </div>
                 <!-- Accessoires de container -->
                 <div class="product-section" id="ctn-accessoires">
-                    <div class="proofs">
+                    <div class="proofs" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
                         <h3>Contenairs standards</h3>
                         <div>
                             <div>
@@ -235,7 +238,7 @@
                         </div>
                         <a href="#"><h3>Containers aménagés</h3></a>
                     </div>
-                    <div class="product">
+                    <div class="product" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="300">
                         <div class="img-container">
                             <img src="assets/img/container1.png" alt="">
                         </div>
@@ -248,7 +251,7 @@
                 </div>
                 <!-- Devis personnalisé -->
                 <div class="product-section" id="ctn-custom">
-                    <div class="product">
+                    <div class="product" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="300">
                         <div class="img-container">
                             <img src="assets/img/container1.png" alt="">
                         </div>
@@ -258,7 +261,7 @@
                         </div>
                         <div class="bottom-band"></div>
                     </div>
-                    <div class="proofs">
+                    <div class="proofs" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
                         <h3>Contenairs standards</h3>
                         <div>
                             <div>
@@ -288,22 +291,22 @@
     <section class="bullets-section second">
         <h2>Nos engagements qualités</h2>
         <div class="wrapper">
-            <div class="bullet-point">
+            <div class="bullet-point" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                 <span>Originalité</span>
                 <i class="fa-solid fa-coffee"></i>
                 <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> </p>
             </div>
-            <div class="bullet-point">
+            <div class="bullet-point" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
                 <span>Originalité</span>
                 <i class="fa-solid fa-coffee"></i>
                 <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> </p>
             </div>
-            <div class="bullet-point">
+            <div class="bullet-point" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
                 <span>Originalité</span>
                 <i class="fa-solid fa-coffee"></i>
                 <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> </p>
             </div>
-            <div class="bullet-point">
+            <div class="bullet-point" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400">
                 <span>Originalité</span>
                 <i class="fa-solid fa-coffee"></i>
                 <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> </p>
@@ -315,7 +318,7 @@
         <h2>Nos clients en parlent</h2>
         <i class="fa-solid fa-circle-chevron-left"></i>
         <i class="fa-solid fa-circle-chevron-right"></i>
-        <div class="wrapper">
+        <div class="wrapper" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300">
             <div class="testimonial-card">
                 <div class="testimonial">
                     <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah  <i class="fas fa-quote-right quote"></i></div>
@@ -384,6 +387,8 @@
         </div>
     </footer>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Vanilla Tilt -->

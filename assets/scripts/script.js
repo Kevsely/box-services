@@ -1,5 +1,9 @@
 const statsEl = document.getElementsByClassName("counting")
-console.log(statsEl)
+
+var statsAnimated = false
+
+// Animate on scroll init
+AOS.init();
 
 // Tilt function on categorie selector
 VanillaTilt.init(document.querySelectorAll(".hero .categories .category"), {
@@ -38,7 +42,18 @@ function animateCounting(obj, initVal, lastVal, duration) {
     window.requestAnimationFrame(step);
 }
 
-for(let i=0; i < statsEl.length; i++) {
-    const lastVal = statsEl[i].getAttribute("data-count")
-    animateCounting(statsEl[i], 0, lastVal, 5000)
+
+// Event listeners
+
+// When the scroll on the page past a certain stage, start the animation on stats
+window.onscroll = () => {
+    if (!statsAnimated && document.documentElement.scrollTop > 400) {
+        for(let i=0; i < statsEl.length; i++) {
+            const lastVal = statsEl[i].getAttribute("data-count")
+            animateCounting(statsEl[i], 0, lastVal, 5000)
+        }
+        statsAnimated = true;
+    } else if (statsAnimated && document.documentElement.scrollTop < 400) {
+        statsAnimated = false;
+    }
 }
