@@ -1,0 +1,29 @@
+/*----------------------------------------------------------
+FOOTER
+----------------------------------------------------------*/
+footer {
+    background-image: linear-gradient(to bottom, #02567a, #046e9a);
+    padding: 1rem 20%;
+    font-size: 16px;
+}
+
+footer .top-div a {
+    margin-right: 1.5rem;
+}
+
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-3);
+    transition: all 1s;
+}
+
+footer a:hover {
+    transform: scale(1.1);
+}
+
+footer .top-div {
+    display: flex;
+    justify-content: space-between;
+
+}
