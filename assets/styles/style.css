@@ -75,7 +75,7 @@ div h3 {
     text-transform: uppercase;
     text-align: center;
     font-family: var(--secondary-font);
-    font-family: 20px;
+    font-size: 20px;
 }
 
 div h4 {
@@ -94,34 +94,42 @@ HERO SECTION
     box-sizing: border-box;
     width: 100%;
     height: 80vh;
-    padding-bottom: 10vh;
+    padding-bottom: 20vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-image: linear-gradient(to right bottom, #02567a, #046e9a, #0687ba, #05a1dc, #00bcff);
+    overflow: hidden;
 }
 
+/* Hero text */
 .hero-text {
     margin-left: 70px;
+    margin-top: 70px;
     width: 30%;
 }
 
 .hero-text h1 {
     margin: 0;
+    margin-bottom: 1rem;
     text-transform: uppercase;
     font-family: var(--secondary-font);
     font-size: 40px;
 }
 
-.hero-carousel {
+#hero-carousel {
     width: 50%;
 }
 
-.hero-carousel img{
+#hero-carousel img{
     display: block;
     margin: auto;
-    /* height: 100%; */
     width: 80%;
+}
+
+/* Hero Carousel */
+#hero-carousel .carousel-inner {
+    height: 100%;
 }
 
 /* Hero Categories */

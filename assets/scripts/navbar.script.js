@@ -17,3 +17,6 @@ function scrollFunction() {
 
 // Event listeners
 window.onscroll = function() {scrollFunction()};
+
+// On load
+scrollFunction()
