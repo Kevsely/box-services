@@ -9,8 +9,9 @@ nav {
     justify-content: space-between;
     padding: 0.5rem 10%;
     box-sizing: border-box;
-    backdrop-filter: blur(2px);
     width: 100%;
+    background-color: rgba(2, 86, 122, 0.8);
+    backdrop-filter: blur(2px);
     transition: box-shadow 0.5s, background-color 0.5s;
 }
 

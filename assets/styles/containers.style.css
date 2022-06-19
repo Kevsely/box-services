@@ -9,7 +9,7 @@ PRODUCT FILTER
     display: flex;
     justify-content: stretch;
     align-items: flex-start;
-    margin: auto 10%;
+    margin: 4rem 10%;
 }
 
 /* Filter side */
