@@ -465,7 +465,7 @@ TESTIMONIALS
 
 .testimonials .footer{
     position:relative;
-    background-image: linear-gradient(to right bottom, #00bcff, #00c6d7, #04c68a, #97b93b, #e99b26);
+    background-image: linear-gradient(to right bottom, #00bcff, #00c6d7, #04c68a);
     height: 30%;
     border-radius: 0 0 10px 10px;    
 }
