@@ -97,11 +97,16 @@ section.results {
     border-radius: 15px;
     box-sizing: border-box;
     width: 23.65%;
-    min-height: 60vh;
+    min-height: 50vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
+    transition: all 1s;
+}
+
+.results .result * {
+    transition: all 0.5s;
 }
 
 .results .result.show {
@@ -150,6 +155,12 @@ section.results {
     font-family: var(--main-font);
     font-size: 20px;
     cursor: pointer;
+}
+
+.results .result button:hover {
+    filter: brightness(105%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.1rem);
 }
 
 .results .result:hover button {

@@ -38,12 +38,20 @@ function filterSelection(productFilter) {
     }
 }
 
-// Event listener
+// Event listeners
+// Apply the filter to all "filter" element
 inputCtnType.forEach((ctnTypeRadio) => {
     ctnTypeRadio.addEventListener("change", () => {
         if (ctnTypeRadio.checked) filterSelection(ctnTypeRadio.value)
     })
 })
+
+// Apply a redirection on each click on a result product
+for (var i = 0; i < resultsToFilter.length; i++) {
+    resultsToFilter[i].addEventListener("click", () => {
+        window.location.assign("product-page.html")
+    })
+}
 
 // On load
 filterSelection("all")
