@@ -1,5 +1,6 @@
 body {
     background-color: var(--color-3);
+    min-height: 100vh;
 }
 
 /*----------------------------------------------------------
@@ -97,7 +98,7 @@ section.results {
     border-radius: 15px;
     box-sizing: border-box;
     width: 23.65%;
-    min-height: 60vh;
+    min-height: 50vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -169,4 +170,15 @@ section.results {
 
 .results .result:hover button {
     display: block;
+}
+
+
+/*----------------------------------------------------------
+FOOTER
+----------------------------------------------------------*/
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
