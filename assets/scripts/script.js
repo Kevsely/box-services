@@ -2,17 +2,6 @@ const statsEl = document.getElementsByClassName("counting")
 
 var statsAnimated = false
 
-// Animate on scroll init
-AOS.init();
-
-// Tilt function on categorie selector
-VanillaTilt.init(document.querySelectorAll(".hero .categories .category"), {
-    max: 25,
-    speed: 400, 
-    glare: true,
-    "max-glare": 0.5,
-    scale: 1.1
-});
 
 // Function to animate count in the stats section
 function animateCounting(obj, initVal, lastVal, duration) {    
@@ -44,9 +33,9 @@ function animateCounting(obj, initVal, lastVal, duration) {
 
 
 // Event listeners
-
 // When the scroll on the page past a certain stage, start the animation on stats
 window.onscroll = () => {
+    console.log("We are here");
     if (!statsAnimated && document.documentElement.scrollTop > 400) {
         for(let i=0; i < statsEl.length; i++) {
             const lastVal = statsEl[i].getAttribute("data-count")
@@ -56,4 +45,16 @@ window.onscroll = () => {
     } else if (statsAnimated && document.documentElement.scrollTop < 400) {
         statsAnimated = false;
     }
-}
+};
+
+// On load
+AOS.init();
+
+// Tilt function on categorie selector
+VanillaTilt.init(document.querySelectorAll(".hero .categories .category"), {
+    max: 25,
+    speed: 400, 
+    glare: true,
+    "max-glare": 0.5,
+    scale: 1.1
+});
