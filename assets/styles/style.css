@@ -363,6 +363,13 @@ PRODUCTS PROOF
     background-color: var(--color-4);
     font-family: var(--main-font);
     font-size: 14px;
+    transition: 1s all;
+}
+
+.proofs a:hover {
+    filter: brightness(105%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.1rem);
 }
 
 /* Product section */

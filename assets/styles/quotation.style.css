@@ -103,4 +103,11 @@ button.send-my-request {
     font-family: var(--secondary-font);
     font-size: 20px;
     color: white;
+    transition: 1s all;
+}
+
+button.send-my-request:hover {
+    filter: brightness(105%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.1rem);
 }

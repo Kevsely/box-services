@@ -166,10 +166,17 @@ section.results {
     font-family: var(--main-font);
     font-size: 20px;
     cursor: pointer;
+    transition: 1s all;
 }
 
 .results .result:hover button {
     display: block;
+}
+
+.results .result button:hover {
+    filter: brightness(105%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.1rem);
 }
 
 
