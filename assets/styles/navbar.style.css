@@ -41,7 +41,7 @@ nav .left-section li {
 }
 
 nav .left-section li.active {
-    background-color: var(--color-4);
+    font-weight: 400;
     color: white;
 }
 
