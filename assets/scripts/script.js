@@ -34,18 +34,19 @@ function animateCounting(obj, initVal, lastVal, duration) {
 
 // Event listeners
 // When the scroll on the page past a certain stage, start the animation on stats
-window.onscroll = () => {
+window.addEventListener("scroll", () => {
     console.log("We are here");
-    if (!statsAnimated && document.documentElement.scrollTop > 400) {
+    if (!statsAnimated && document.documentElement.scrollTop > 300) {
         for(let i=0; i < statsEl.length; i++) {
             const lastVal = statsEl[i].getAttribute("data-count")
             animateCounting(statsEl[i], 0, lastVal, 5000)
         }
         statsAnimated = true;
-    } else if (statsAnimated && document.documentElement.scrollTop < 400) {
-        statsAnimated = false;
-    }
-};
+    } 
+    // else if (statsAnimated && document.documentElement.scrollTop < 300) {
+    //     statsAnimated = false;
+    // }
+})
 
 // On load
 AOS.init();
