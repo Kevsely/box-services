@@ -1,6 +1,28 @@
 // DOM Elements
 var cartSizeElt = document.getElementById("cart-size")
 
+// Update the Cart size
+function updateCartSize() {
+    console.log("We should get here")
+    const cart = JSON.parse(window.localStorage.getItem("cart"))
+    let newCartSize = 0
+
+    if (cart){
+        cart.forEach(cartItem => {
+            newCartSize += cartItem.quantity
+        });
+    }
+
+    if (!newCartSize) {
+        cartSizeElt.style.display = "none"
+    }
+    else {
+        if (cartSizeElt.hidden)
+        cartSizeElt.style.display = "block"
+        cartSizeElt.textContent = newCartSize
+    }
+}
+
 // Add items on the page to the cart in localStorage
 function addToCart(productTileElt) {
     var cart, existingItem = false, existingItemIndex = -1
@@ -36,31 +58,11 @@ function addToCart(productTileElt) {
 
     // ...then add it localStorage
     window.localStorage.setItem("cart", JSON.stringify(cart))
-}
-
-// Update the Cart size
-function updateCartSize() {
-    const cart = JSON.parse(window.localStorage.getItem("cart"))
-    let newCartSize = 0
-
-    if (cart){
-        cart.forEach(cartItem => {
-            newCartSize += cartItem.quantity
-        });
-    }
-
-    if (!newCartSize) {
-        cartSizeElt.hidden = true
-    }
-    else {
-        if (cartSizeElt.hidden)
-            cartSizeElt.hidden = false
-        cartSizeElt.textContent = newCartSize
-    }
+    updateCartSize()
 }
 
 // Event Listener 
-window.addEventListener("storage", updateCartSize)
+
 
 // On load
 updateCartSize()
