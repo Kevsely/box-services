@@ -1,5 +1,5 @@
 // DOM Elements
-var 
+var cartSizeElt = document.getElementById("cart-size")
 
 // Add items on the page to the cart in localStorage
 function addToCart(productTileElt) {
@@ -37,3 +37,28 @@ function addToCart(productTileElt) {
     // ...then add it localStorage
     window.localStorage.setItem("cart", JSON.stringify(cart))
 }
+
+// Update the Cart size
+function updateCartSize() {
+    const cart = JSON.parse(window.localStorage.getItem("cart"))
+    let newCartSize
+
+    cart.forEach(cartItem => {
+        newCartSize += cartItem.quantity
+    });
+
+    if (!newCartSize) {
+        cartSizeElt.hidden = true
+    }
+    else {
+        if (cartSizeElt.hidden)
+            cartSizeElt.hidden = false
+        cartSizeElt.textContent = newCartSize
+    }
+}
+
+// Event Listener 
+window.addEventListener("storage", updateCartSize)
+
+// On load
+updateCartSize()

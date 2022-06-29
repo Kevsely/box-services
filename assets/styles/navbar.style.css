@@ -77,10 +77,28 @@ nav .right-section:hover {
     transform: translateY(-0.1rem);
 }
 
-nav .right-section i {
+nav .right-section .cart-icon {
+    position: relative;
     margin-right: 0.5rem;
     border-right: 1px solid white;
     padding-right: 0.5rem;
+}
+
+nav .right-section .cart-icon i {
+    margin-right: 0.5rem;
+}
+
+nav .right-section .cart-icon span {
+    display: block;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    border-radius: 50%;
+    padding: 0.2rem 0.4rem;
+    height: fit-content;
+    font-size: 12px;
+    background-color: red;
+
 }
 
 nav .right-section a {
