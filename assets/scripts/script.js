@@ -57,6 +57,12 @@ function slideTestimony(direction) {
         // Hide the last one
         testimonialsWrapper.children[3].hidden = true
     }
+
+    // Trigger the appropriate animation
+    testimonialsWrapper.classList.add(`slide-to-${(direction) ? "left" : "right"}`)
+    setTimeout(() => {
+        testimonialsWrapper.classList.remove(`slide-to-${(direction) ? "left" : "right"}`)
+    }, 600)
 }
 
 // Event listeners

@@ -28,6 +28,14 @@ body {
     overflow-x: hidden;
 }
 
+.slide-to-left {
+    animation: slide-to-left 0.5s linear both;
+}
+
+.slide-to-right {
+    animation: slide-to-right 0.5s linear both;
+}
+
 .section-background {
     position: relative;
     display: flex;
@@ -442,7 +450,16 @@ TESTIMONIALS
     top: 50%;
 }
 
+.testimonials .wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    width: 100%;
+    overflow: visible;
+}
+
 .testimonials .testimonial-card {
+    /* display: block; */
     height: 40vh;
     width: 30%;
     background-color: white;
@@ -494,9 +511,9 @@ TESTIMONIALS
 .testimonials .person{
     color:white;
     position: absolute;
-    top: 60%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -100%);
-    font-size:1.5rem;
+    font-size:1rem;
     font-weight: 600;
 }

@@ -46,12 +46,5 @@ inputCtnType.forEach((ctnTypeRadio) => {
     })
 })
 
-// Apply a redirection on each click on a result product
-for (var i = 0; i < resultsToFilter.length; i++) {
-    resultsToFilter[i].addEventListener("click", () => {
-        window.location.assign("product-page.html")
-    })
-}
-
 // On load
 filterSelection("all")
