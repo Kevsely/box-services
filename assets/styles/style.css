@@ -429,6 +429,7 @@ TESTIMONIALS
     position: absolute;
     color: var(--color-1);
     font-size: 40px;
+    cursor: pointer;
 }
 
 .testimonials .fa-circle-chevron-left {

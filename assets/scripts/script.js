@@ -1,6 +1,12 @@
 const statsEl = document.getElementsByClassName("counting")
+var testimonialsWrapper = document.getElementById("testimonials-wrapper")
+var testimonialElts = document.getElementsByClassName("testimonial-card")
+// testimonialElts = [...testimonialElts]
 
+// Global Variables
 var statsAnimated = false
+
+var currentlyHiddenTestimony = 3
 
 
 // Function to animate count in the stats section
@@ -28,14 +34,34 @@ function animateCounting(obj, initVal, lastVal, duration) {
     };
     
     //start animating
-    window.requestAnimationFrame(step);
+    window.requestAnimationFrame(step)
 }
 
+function slideTestimony(direction) {
+    // if direction's true - slide testimonial to left with right arrow
+    // if direction's false - slide testimonial to right with left arrow
+
+    if (direction) {
+        // Make the shift
+        // ...using a custom version of insertBefore in order to insertafter
+        testimonialsWrapper.insertBefore(testimonialsWrapper.firstElementChild, testimonialsWrapper.lastElementChild.nextElementSibling)        
+        // Show the third element
+        testimonialsWrapper.children[2].hidden = false
+        // Hide the last one
+        testimonialsWrapper.lastElementChild.hidden = true
+    } else {
+        // Make the shift
+        testimonialsWrapper.insertBefore(testimonialsWrapper.lastElementChild, testimonialsWrapper.firstElementChild)        
+        // Show the first element
+        testimonialsWrapper.firstElementChild.hidden = false
+        // Hide the last one
+        testimonialsWrapper.children[3].hidden = true
+    }
+}
 
 // Event listeners
 // When the scroll on the page past a certain stage, start the animation on stats
 window.addEventListener("scroll", () => {
-    console.log("We are here");
     if (!statsAnimated && document.documentElement.scrollTop > 300) {
         for(let i=0; i < statsEl.length; i++) {
             const lastVal = statsEl[i].getAttribute("data-count")
@@ -59,3 +85,5 @@ VanillaTilt.init(document.querySelectorAll(".hero .categories .category"), {
     "max-glare": 0.5,
     scale: 1.1
 });
+
+// slideTestimonyToLeft()
