@@ -41,11 +41,13 @@ function addToCart(productTileElt) {
 // Update the Cart size
 function updateCartSize() {
     const cart = JSON.parse(window.localStorage.getItem("cart"))
-    let newCartSize
+    let newCartSize = 0
 
-    cart.forEach(cartItem => {
-        newCartSize += cartItem.quantity
-    });
+    if (cart){
+        cart.forEach(cartItem => {
+            newCartSize += cartItem.quantity
+        });
+    }
 
     if (!newCartSize) {
         cartSizeElt.hidden = true
