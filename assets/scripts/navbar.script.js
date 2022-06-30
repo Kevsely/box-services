@@ -1,4 +1,5 @@
 var navbar = document.getElementsByTagName("nav")[0];
+var cta = document.getElementsByClassName("right-section")[0]
 
 
 // When the user scrolls down, XXpx from the top of the document (then 650px), change the navbar color and shadow
@@ -15,3 +16,10 @@ window.onscroll = function() {scrollFunction()};
 
 // On load
 scrollFunction()
+
+setInterval(() => {
+    cta.classList.add("shake-bottom")
+    setTimeout(() => {
+        cta.classList.remove("shake-bottom")
+    }, 1000)
+}, 10000)

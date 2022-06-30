@@ -3,7 +3,6 @@ var cartSizeElt = document.getElementById("cart-size")
 
 // Update the Cart size
 function updateCartSize() {
-    console.log("We should get here")
     const cart = JSON.parse(window.localStorage.getItem("cart"))
     let newCartSize = 0
 

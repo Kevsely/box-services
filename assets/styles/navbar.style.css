@@ -67,8 +67,15 @@ nav .right-section {
     align-items: center;
     padding: 0.5rem;
     background-color: var(--color-4);
-    /* animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 5s infinite normal both; */
     transition: 1s all;
+}
+
+nav .right-section.shake-bottom {
+    animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite normal both;
+}
+
+nav .right-section.shake-bottom:hover {
+    animation: none;
 }
 
 nav .right-section:hover {
