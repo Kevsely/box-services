@@ -45,7 +45,5 @@ inputCtnType.forEach((ctnTypeRadio) => {
     })
 })
 
-
-
 // On load
 filterSelection("all")

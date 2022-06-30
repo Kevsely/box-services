@@ -1,5 +1,6 @@
 // DOM Elements
 var cartSizeElt = document.getElementById("cart-size")
+var cartTextElt = document.getElementById("cart-text")
 
 // Update the Cart size
 function updateCartSize() {
@@ -14,11 +15,14 @@ function updateCartSize() {
 
     if (!newCartSize) {
         cartSizeElt.style.display = "none"
+        cartTextElt.textContent = "Je décris mon projet"
     }
     else {
-        if (cartSizeElt.hidden)
-        cartSizeElt.style.display = "block"
+        if (cartSizeElt.style.display === "none") {
+            cartSizeElt.style.display = "block"
+        }
         cartSizeElt.textContent = newCartSize
+        cartTextElt.textContent = "Je finalise mon devis"
     }
 }
 
