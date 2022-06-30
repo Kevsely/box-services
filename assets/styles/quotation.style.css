@@ -32,11 +32,24 @@ table.quotation {
 }
 
 .quotation tr {
+    position: relative;
     border-bottom: 1px solid grey;
 }
 
 .quotation td {
     text-align: center;
+}
+
+.quotation td i {
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.quotation td i:hover {
+    color: red;
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(110%);
 }
 
 .quotation tfoot td:nth-child(odd) {

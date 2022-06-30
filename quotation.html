@@ -50,7 +50,7 @@
                     <th>Prix Total <br>(estimé)</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="quotation-body">
                 <tr>
                     <td>01</td>
                     <td><img src="assets/img/container1.png" alt=""></td>
@@ -58,6 +58,7 @@
                     <td>3900€</td>
                     <td>02</td>
                     <td>7800€</td>
+                    <td><i class="fa-solid fa-trash-can" onclick="removeElement(this.parentElement.parentElement)"></i></td>
                 </tr>
                 <tr>
                     <td>02</td>
@@ -66,6 +67,7 @@
                     <td>3900€</td>
                     <td>02</td>
                     <td>7800€</td>
+                    <td><i class="fa-solid fa-trash-can"></i></td>
                 </tr>
                 <tr>
                     <td>03</td>
@@ -74,12 +76,13 @@
                     <td>3900€</td>
                     <td>02</td>
                     <td>7800€</td>
+                    <td><i class="fa-solid fa-trash-can"></i></td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
                     <td colspan="5">Total Hors Taxes</td>
-                    <td>0.00€</td>
+                    <td id="totalEstimation">0.00€</td>
                 </tr>
                 <tr>
                     <td colspan="5">Frais de port</td>
@@ -87,7 +90,7 @@
                 </tr>
                 <tr>
                     <td colspan="5">Total TTC</td>
-                    <td>0.00€</td>
+                    <td>Sur Devis</td>
                 </tr>
             </tfoot>
         </table>
@@ -178,5 +181,6 @@
     </footer>
 
     <script src="assets/scripts/navbar.script.js"></script>
+    <script src="assets/scripts/quotation.script.js"></script>
 </body>
 </html>
