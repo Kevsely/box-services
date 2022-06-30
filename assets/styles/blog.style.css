@@ -1,0 +1,73 @@
+h1 {
+    margin-top: 5rem;
+    margin-left: 20%;
+    color: var(--color-1);
+    text-transform: uppercase;
+    /* text-align: center; */
+    font-family: var(--secondary-font);
+    font-size: 30px;
+}
+
+.blog-page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 20%;
+}
+
+.blog-page-wrapper .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 1rem;
+    border-radius: 1rem;
+    width: 30%;
+    height: 70vh;
+    transition: all 0.5s;
+}
+
+.blog-page-wrapper .article:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.blog-page-wrapper .article .image {
+    height: 50%;
+}
+
+.blog-page-wrapper .article .image img {
+    margin: auto;
+    height: 100%;
+}
+
+.blog-page-wrapper .description {
+    margin: 0.5rem;
+}
+
+.blog-page-wrapper h2 {
+    margin: 0.5rem 0;
+    transition: all 0.5s;
+}
+
+.blog-page-wrapper h2:hover {
+    transform: scale(102%);
+}
+
+.blog-page-wrapper h2 a {
+    color: var(--color-1);
+}
+
+.blog-page-wrapper p {
+    margin: 0.5rem 0;
+    color: rgb(24, 24, 24);
+}
+
+.blog-page-wrapper p a {
+    display: inline-block;
+    color: var(--color-1);
+    transition: all 0.5s;
+}
+
+.blog-page-wrapper p a:hover {
+    transform: scale(110%);
+}
+
