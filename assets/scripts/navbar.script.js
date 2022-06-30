@@ -17,9 +17,11 @@ window.onscroll = function() {scrollFunction()};
 // On load
 scrollFunction()
 
-setInterval(() => {
-    cta.classList.add("shake-bottom")
-    setTimeout(() => {
-        cta.classList.remove("shake-bottom")
-    }, 1000)
-}, 10000)
+if (cta) {
+    setInterval(() => {
+        cta.classList.add("shake-bottom")
+        setTimeout(() => {
+            cta.classList.remove("shake-bottom")
+        }, 1000)
+    }, 10000)
+}
