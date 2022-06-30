@@ -4,13 +4,31 @@ body {
 }
 
 /*----------------------------------------------------------
+PRODUCT DESCRIPTION
+----------------------------------------------------------*/
+.description {
+    display: flex;
+    margin: 4rem 10% 0;
+    color: var(--color-1);
+    overflow: hidden;
+}
+
+.description .content {
+    width: 70%;
+}
+
+.description img {
+    width: 30%;
+}
+
+/*----------------------------------------------------------
 PRODUCT FILTER
 ----------------------------------------------------------*/
 .accessories-page-wrapper {
     display: flex;
     justify-content: stretch;
     align-items: flex-start;
-    margin: 4rem 10%;
+    margin: 2rem 10%;
 }
 
 /* Filter side */
@@ -95,9 +113,9 @@ section.results {
 /*----------------------------------------------------------
 FOOTER
 ----------------------------------------------------------*/
-footer {
+/* footer {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-}
+} */
