@@ -1,7 +1,6 @@
 const statsEl = document.getElementsByClassName("counting")
 var testimonialsWrapper = document.getElementById("testimonials-wrapper")
 var testimonialElts = document.getElementsByClassName("testimonial-card")
-// testimonialElts = [...testimonialElts]
 
 // Global Variables
 var statsAnimated = false

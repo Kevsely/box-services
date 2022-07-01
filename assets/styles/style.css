@@ -517,3 +517,7 @@ TESTIMONIALS
     font-size:1rem;
     font-weight: 600;
 }
+
+footer a:hover { 
+    color: var(--color-3);
+}
