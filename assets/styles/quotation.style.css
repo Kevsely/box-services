@@ -95,6 +95,10 @@ ADDRESSES
     margin: 0.5rem 0;
 }
 
+.address-wrapper label[for=for-entreprise] {
+    flex-direction: row;
+}
+
 /*----------------------------------------------------------
 CGV
 ----------------------------------------------------------*/

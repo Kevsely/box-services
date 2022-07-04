@@ -1,6 +1,8 @@
 // DOM Element
 const quotationTableBody = document.getElementsByClassName("quotation-body")[0]
 const quotationTableEstimatedPrice = document.getElementById("totalEstimation")
+const isEntrepriseElt = document.querySelector(".address-wrapper label[for=for-entreprise] input")
+const entrepriseInputElt = document.querySelector(".address-wrapper label[for=entreprise]")
 
 function numberWithPoint(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
@@ -79,8 +81,24 @@ function removeElement(itemToRemove) {
     fillQuotationTable()
 }
 
+function generatePDF() {
+    html2canvas(document.body).then(function(canvas) {     
+        const link = document.createElement('a');
+        link.download = 'quotation.png';
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+        link.delete;
+        // console.log(canvas.toDataURL("image/png"))
+    });
+}
+
+
 // Event Listeners
 window.addEventListener("storage", fillQuotationTable)
+isEntrepriseElt.addEventListener("change", () => {
+    entrepriseInputElt.style.display = `${isEntrepriseElt.checked ? "flex" : "none"}`
+})
 
 // On load
 fillQuotationTable()
+// generatePDF()
