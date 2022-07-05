@@ -10,6 +10,7 @@ GENERAL STYLES
     --color-2: #00BCFF;
     --color-3: #F1F1E6;
     --color-4: #E99B26;
+    --color-black: rgb(70, 70, 70);
     --main-font: "Josefin Sans", sans-serif;
     --secondary-font: "Oswald", sans-serif;
 }
@@ -255,7 +256,7 @@ OUR STATS
 
 .stat h3 {
     margin: 0;
-    color: var(--color-1);
+    color: var(--color-black);
 }
 
 /*----------------------------------------------------------
@@ -266,11 +267,17 @@ BULLET SECTION(S)
     border: 1px solid var(--color-1);
     border-radius: 1rem;
     padding: 1rem;
+    height: 13rem;
+    width: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--color-1);
+    color: var(--color-black);
+}
+
+.bullets-section .bullet-point strong {
+    color: var(--color-1)
 }
 
 .bullets-section  i {
@@ -279,6 +286,7 @@ BULLET SECTION(S)
 }
 
 .bullets-section p {
+    margin-top: 1rem;
     font-size: 20px;
     text-align: center;
 }
@@ -287,10 +295,16 @@ BULLET SECTION(S)
     margin-bottom: 4rem;
 }
 
+.bullets-section.second .bullet-point {
+    height: 16rem;
+}
+
 .bullets-section.second span {
     display: block;
-    font-size: 30px;
     margin-bottom: 0.5rem;
+    color: var(--color-1);
+    font-size: 30px;
+    font-weight: 400;
 }
 
 /*----------------------------------------------------------
@@ -351,7 +365,7 @@ PRODUCTS PROOF
 
 .proofs p {
     margin: auto;
-    color: var(--color-1);
+    color: var(--color-black);
     font-weight: 400;
     vertical-align: top;
 }
@@ -476,7 +490,7 @@ TESTIMONIALS
     position: relative;
     margin: auto;
     padding: 1rem;
-    color: var(--color-1);
+    color: var(--color-black);
 }
 
 .testimonials .quote{
