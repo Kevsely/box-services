@@ -3,7 +3,7 @@ const quotationTableBody = document.getElementsByClassName("quotation-body")[0]
 const quotationTableEstimatedPrice = document.getElementById("totalEstimation")
 const isEntrepriseElt = document.querySelector(".address-wrapper label[for=for-entreprise] input")
 const entrepriseInputElt = document.querySelector(".address-wrapper label[for=entreprise]")
-const submitButton = document.getElementsByClassName("send-my-request")[0]
+const quotationForm = document.querySelector(".quotation-page-wrapper form")
 
 function numberWithPoint(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
@@ -103,13 +103,13 @@ function sendEmail(imagePath) {
     );
 }
 
-function sendAskForQuotation() {
+function sendAskForQuotation(event) {
+    event.preventDefault()
+    // Reset the form
     // Generate PNG
-    html2canvas(document.getElementsByClassName("quotation-page-wrapper")[0]).then(function(canvas) {
+    html2canvas(document.querySelector(".quotation-page-wrapper form")).then(canvas => {
         sendEmail(canvas.toDataURL("image/png"))
-    });
-
-
+    })
 }
 
 // Event Listeners
@@ -117,7 +117,7 @@ window.addEventListener("storage", fillQuotationTable)
 isEntrepriseElt.addEventListener("change", () => {
     entrepriseInputElt.style.display = `${isEntrepriseElt.checked ? "flex" : "none"}`
 })
-submitButton.addEventListener("click", sendAskForQuotation)
+quotationForm.addEventListener("submit", sendAskForQuotation)
 
 
 // On load

@@ -37,96 +37,97 @@
     </nav>
     <!--  -->
     <div class="quotation-page-wrapper">
-        <!-- Quotation table -->
-        <h1>RÉCAPITULATIF DE LA DEMANDE DE DEVIS</h1>
-        <table class="quotation">
-            <thead>
-                <tr>
-                    <th>N°</th>
-                    <th>Aperçu</th>
-                    <th>Désignation</th>
-                    <th>Prix Unit. <br>(estimé)</th>
-                    <th>Quantité</th>
-                    <th>Prix Total <br>(estimé)</th>
-                </tr>
-            </thead>
-            <tbody class="quotation-body">
-                <!-- <tr>
-                    <td>01</td>
-                    <td><img src="assets/img/container1.png" alt=""></td>
-                    <td>Conteneur maritime de stockage « standard » 6 pieds</td>
-                    <td>3900€</td>
-                    <td>02</td>
-                    <td>7800€</td>
-                    <td><i class="fa-solid fa-trash-can" onclick="removeElement(this.parentElement.parentElement)"></i></td>
-                </tr> -->
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="5">Total Hors Taxes</td>
-                    <td id="totalEstimation">0.00€</td>
-                </tr>
-                <tr>
-                    <td colspan="5">Frais de port</td>
-                    <td>Sur Devis</td>
-                </tr>
-                <tr>
-                    <td colspan="5">Total TTC</td>
-                    <td>Sur Devis</td>
-                </tr>
-            </tfoot>
-        </table>
-        <!-- Warning -->
-        <span class="warning">Ceci est une <strong>estimation</strong>. Veuillez remplir le formulaire ci-dessous pour recevoir un devis plus précis</span>
-        <!-- Order description -->
-        <h2>Description de mon projet</h2>
-        <textarea class="project-description" cols="30" rows="10"></textarea>
-        <!-- Your informations -->
-        <h2>Vos informations</h2>
-        <div class="address-wrapper shipping">
-            <label for="fname">                
-                <span><i class="fa fa-user"></i> Votre nom complet</span>                
-                <input type="text" id="fname" name="firstname" placeholder="Thomas Edison">
-            </label>
-            <label for="email">
-                <span><i class="fa fa-envelope"></i> Email</span>
-                <input type="text" id="email" name="email" placeholder="john@example.com">
-            </label>
-            <label for="for-entreprise">
-                <input type="checkbox" name="for-entreprise" id="" checked>
-                &nbsp;J'achète pour une entreprise
-            </label>
-            <label for="entreprise">                
-                <span><i class="fa fa-user"></i> Nom de votre entrepise</span>                
-                <input type="text" id="entreprise" name="firstname" placeholder="Box Services et Co">
-            </label>
-        </div>
-
-        <!-- Shipping Address -->
-        <h2>Adresse de livraison</h2>
-        <div class="address-wrapper shipping">
-            <label for="adr">
-                <span><i class="fa fa-institution"></i> Addresse</span>
-                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-            </label>
-            <label for="city">
-                <span><i class="fa fa-institution"></i> Ville</span>
-                <input type="text" id="city" name="city" placeholder="New York">
-            </label>
-            <label for="state">
-                <span><i class="fa fa-institution"></i> State</span>
-                <input type="text" id="state" name="state" placeholder="NY">
-            </label>                
-            <label for="zip">
-                <span><i class="fa fa-institution"></i> Zip</span>
-                <input type="text" id="zip" name="zip" placeholder="10001">
-            </label>
-        </div>
-
-        <!-- CGV -->
-        <label class="cgv" for="cgv-approve"><input type="checkbox" name="cgv-approve" id=""><span> J'ai lu les conditions générales de vente et j'y adhère sans réserve.</span></label>
-        <!-- Send the request -->
-        <button class="send-my-request">Demander le devis final</button>
+        <form action="">
+            <!-- Quotation table -->
+            <h1>RÉCAPITULATIF DE LA DEMANDE DE DEVIS</h1>
+            <table class="quotation">
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Aperçu</th>
+                        <th>Désignation</th>
+                        <th>Prix Unit. <br>(estimé)</th>
+                        <th>Quantité</th>
+                        <th>Prix Total <br>(estimé)</th>
+                    </tr>
+                </thead>
+                <tbody class="quotation-body">
+                    <!-- <tr>
+                        <td>01</td>
+                        <td><img src="assets/img/container1.png" alt=""></td>
+                        <td>Conteneur maritime de stockage « standard » 6 pieds</td>
+                        <td>3900€</td>
+                        <td>02</td>
+                        <td>7800€</td>
+                        <td><i class="fa-solid fa-trash-can" onclick="removeElement(this.parentElement.parentElement)"></i></td>
+                    </tr> -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Total Hors Taxes</td>
+                        <td id="totalEstimation">0.00€</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Frais de port</td>
+                        <td>Sur Devis</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Total TTC</td>
+                        <td>Sur Devis</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <!-- Warning -->
+            <span class="warning">Ceci est une <strong>estimation</strong>. Veuillez remplir le formulaire ci-dessous pour recevoir un devis plus précis</span>
+            <!-- Order description -->
+            <h2>Description de mon projet</h2>
+            <textarea class="project-description" cols="30" rows="10"></textarea>
+            <!-- Your informations -->
+            <h2>Vos informations</h2>
+            <div class="address-wrapper shipping">
+                <label for="fname">                
+                    <span><i class="fa fa-user"></i> Votre nom complet</span>                
+                    <input type="text" id="fname" name="firstname" placeholder="Thomas Edison" required>
+                </label>
+                <label for="email">
+                    <span><i class="fa fa-envelope"></i> Email</span>
+                    <input type="text" id="email" name="email" placeholder="john@example.com" required>
+                </label>
+                <label for="for-entreprise">
+                    <input type="checkbox" name="for-entreprise" id="" checked>
+                    &nbsp;J'achète pour une entreprise
+                </label>
+                <label for="entreprise">                
+                    <span><i class="fa fa-user"></i> Nom de votre entrepise</span>                
+                    <input type="text" id="entreprise" name="firstname" placeholder="Box Services et Co" required>
+                </label>
+            </div>
+    
+            <!-- Shipping Address -->
+            <h2>Adresse de livraison</h2>
+            <div class="address-wrapper shipping">
+                <label for="adr">
+                    <span><i class="fa fa-institution"></i> Addresse</span>
+                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+                </label>
+                <label for="city">
+                    <span><i class="fa fa-institution"></i> Ville</span>
+                    <input type="text" id="city" name="city" placeholder="New York" required>
+                </label>
+                <label for="state">
+                    <span><i class="fa fa-institution"></i> State</span>
+                    <input type="text" id="state" name="state" placeholder="NY" required>
+                </label>                
+                <label for="zip">
+                    <span><i class="fa fa-institution"></i> Zip</span>
+                    <input type="text" id="zip" name="zip" placeholder="10001" required>
+                </label>
+            </div>
+            <!-- CGV -->
+            <label class="cgv" for="cgv-approve"><input type="checkbox" name="cgv-approve" id="" required><span> J'ai lu les conditions générales de vente et j'y adhère sans réserve.</span></label>
+            <!-- Send the request -->
+            <input type="submit" class="send-my-request" value="Demander le devis final">
+        </form>
     </div>
 
     <!-- Footer -->

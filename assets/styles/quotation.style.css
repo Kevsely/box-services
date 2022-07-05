@@ -10,7 +10,11 @@ body {
 }
 
 .quotation-page-wrapper {
-    margin: 4rem 20%;
+    margin: 3rem 15%;
+}
+
+.quotation-page-wrapper form{
+    padding: 1rem 5%;
 }
 
 /*----------------------------------------------------------
@@ -110,7 +114,7 @@ CGV
 /*----------------------------------------------------------
 SEND MY REQUEST
 ----------------------------------------------------------*/
-button.send-my-request {
+input.send-my-request {
     cursor: pointer;
     border: none;
     border-radius: 10px;
@@ -123,7 +127,7 @@ button.send-my-request {
     transition: 1s all;
 }
 
-button.send-my-request:hover {
+input.send-my-request:hover {
     filter: brightness(105%);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transform: translateY(-0.1rem);
