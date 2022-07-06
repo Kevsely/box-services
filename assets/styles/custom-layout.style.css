@@ -12,6 +12,14 @@ PRODUCT DESCRIPTION
     width: 70%;
 }
 
+.description .content .text {
+    color: var(--color-black);
+}
+
+.text a {
+    color: var(--color-black);
+}
+
 .description img {
     width: 30%;
 }
