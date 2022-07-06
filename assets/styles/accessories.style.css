@@ -13,6 +13,14 @@ PRODUCT DESCRIPTION
     overflow: hidden;
 }
 
+.description .content .text {
+    color: var(--color-black);
+}
+
+.text a {
+    color: var(--color-black);
+}
+
 .description .content {
     width: 70%;
 }
