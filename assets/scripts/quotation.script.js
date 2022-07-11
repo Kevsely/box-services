@@ -96,8 +96,8 @@ function sendEmail(imagePath) {
         Port : 2525,
         Username : "skybet229@gmail.com",
         Password : "4E5E1FB5522D2878C956A7C7983E5D566FC9",
-        To : 'elegis.sossou@gmail.com',
-        From : '"Box Services"fgggfggfgfgf',
+        To : 'Ajr2402@icloud.com',
+        From : 'skybet229@gmail.com',
         Subject : "Nouvelle demande de devis",
         Body : `Vous venez de recevoir une nouvelle demande de devis de ${askerName}. Cliquez sur l'image suivant pour consulter`,
         Attachments : [
