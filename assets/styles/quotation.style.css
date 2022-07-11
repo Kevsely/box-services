@@ -42,10 +42,12 @@ table.quotation {
 
 .quotation td {
     text-align: center;
+    color: var(--color-black);
 }
 
 .quotation td i {
     opacity: 0.5;
+    color: var(--color-1);
     transition: all 0.3s;
 }
 
@@ -54,6 +56,10 @@ table.quotation {
     opacity: 1;
     cursor: pointer;
     transform: scale(110%);
+}
+
+.quotation tfoot td {
+    color: var(--color-1);
 }
 
 .quotation tfoot td:nth-child(odd) {
@@ -80,7 +86,18 @@ h2 {
 }
 
 .project-description {
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 0.5rem;
     width: 100%;
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.project-description:focus-visible {
+    outline-color: var(--color-1);
 }
 
 /*----------------------------------------------------------
@@ -90,6 +107,7 @@ ADDRESSES
     display: flex;
     flex-direction: column;
     border: 1px solid grey;
+    border-radius: 15px;
     padding: 1rem;
 }
 
@@ -97,6 +115,21 @@ ADDRESSES
     display: flex;
     flex-direction: column;
     margin: 0.5rem 0;
+}
+
+.address-wrapper input[type=text] {
+    border-radius: 5px;
+    border-color: var(--color-3);
+    border-style: solid;
+    padding: 0.5rem;
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.address-wrapper input[type=text]:focus-visible {
+    /* border-color: var(--color-1); */
+    outline-color: var(--color-1);
 }
 
 .address-wrapper label[for=for-entreprise] {
@@ -115,7 +148,6 @@ CGV
 SEND MY REQUEST
 ----------------------------------------------------------*/
 input.send-my-request {
-    cursor: pointer;
     border: none;
     border-radius: 10px;
     padding: 0.8rem 0;
@@ -124,13 +156,21 @@ input.send-my-request {
     font-family: var(--secondary-font);
     font-size: 20px;
     color: white;
+}
+
+input.send-my-request:enabled {
+    cursor: pointer;
     transition: 1s all;
 }
 
-input.send-my-request:hover {
+input.send-my-request:enabled:hover {
     filter: brightness(105%);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transform: translateY(-0.1rem);
+}
+
+input.send-my-request:disabled {
+    opacity: 0.4;
 }
 
 /*----------------------------------------------------------
