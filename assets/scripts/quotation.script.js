@@ -105,7 +105,7 @@ function sendEmail(imagePath) {
                 name : `Devis_${askerName.replaceAll(" ", "_")}_${today}.png`,
                 data : imagePath
             }]
-        }).then(
+    }).then(
         alert("Demande de devis envoyée avec succès")
     );
 }
