@@ -127,6 +127,7 @@ HERO SECTION
     font-size: 40px;
 }
 
+/* Hero Carousel */
 #hero-carousel {
     width: 50%;
 }
@@ -137,7 +138,6 @@ HERO SECTION
     width: 80%;
 }
 
-/* Hero Carousel */
 #hero-carousel .carousel-inner {
     height: 100%;
 }
@@ -535,4 +535,84 @@ TESTIMONIALS
 
 footer a:hover { 
     color: var(--color-3);
+}
+
+/*----------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+MEDIA QUERIES
+------------------------------------------------------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+@media screen and (max-width: 850px) {
+    
+/*----------------------------------------------------------
+GENERAL STYLES
+----------------------------------------------------------*/
+    section {
+        margin: auto;
+        padding: 0 2.5%;
+    }
+
+    .section-background > section {
+        position: relative;
+    }
+
+    section .wrapper {
+        flex-direction: column;
+    }
+
+/*----------------------------------------------------------
+HERO SECTION
+----------------------------------------------------------*/
+    .hero-section {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    /* Hero text */
+    .hero-text {
+        margin: 0;
+        width: 95%;
+    }
+
+    /* Hero Carousel */
+    #hero-carousel {
+        width: 95%;
+    }
+
+    /* Hero Categories */
+    .section-background.hero {
+        height: auto;
+    }
+    
+    .hero .categories {
+        flex-direction: column;
+        top: 0;
+        height: auto;
+    }
+
+    .categories .category {
+        margin: auto;
+        width: 95%;
+    }
+
+/*----------------------------------------------------------
+OUR STATS
+----------------------------------------------------------*/
+    .stats .wrapper {
+        width: 95%;
+    }
+
+/*----------------------------------------------------------
+PRODUCTS PROOF
+----------------------------------------------------------*/
+    .products-proof .product-section {
+        flex-direction: column;
+    }
+
+    .products-proof .product-section > div {
+        width: 95%;
+        /* height: 100%; */
+    }
 }
