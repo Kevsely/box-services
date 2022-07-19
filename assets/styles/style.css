@@ -395,7 +395,7 @@ PRODUCTS PROOF
     transform: translateY(-0.1rem);
 }
 
-/* Product section */
+/* Product side */
 .product {
     position: relative;
     border: 1px solid #fff;
@@ -431,9 +431,9 @@ PRODUCTS PROOF
 
 .product .bottom-band {
     position: absolute;
-    height: 50%;
+    height: 60%;
     width: 100%;
-    top: 70%;
+    top: 60%;
     background-image: linear-gradient(to right bottom, #02567a, #046e9a, #0687ba, #05a1dc, #00bcff);
     transform-origin: left;
     transform: skewY(-10deg);
@@ -559,6 +559,7 @@ GENERAL STYLES
     }
 
     section .wrapper {
+        margin: auto;
         flex-direction: column;
     }
 
@@ -566,14 +567,19 @@ GENERAL STYLES
 HERO SECTION
 ----------------------------------------------------------*/
     .hero-section {
-        flex-direction: column;
         padding-bottom: 0;
+        flex-direction: column;
     }
-
+    
     /* Hero text */
     .hero-text {
         margin: 0;
+        margin-top: 3rem;
         width: 95%;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
     }
 
     /* Hero Carousel */
@@ -593,26 +599,75 @@ HERO SECTION
     }
 
     .categories .category {
-        margin: auto;
-        width: 95%;
+        margin: 1rem auto!important;
+        width: 80%;
+        height: 30vh;
+    }
+
+    .categories .category:last-of-type {
+        margin-bottom: 2rem!important;
     }
 
 /*----------------------------------------------------------
 OUR STATS
 ----------------------------------------------------------*/
+    .stats {
+        padding-top: 1rem;
+    }
+
     .stats .wrapper {
         width: 95%;
+    }
+
+    .stats .wrapper .stat {
+        margin: 1rem auto;
+    }
+
+/*----------------------------------------------------------
+BULLET SECTION(S)
+----------------------------------------------------------*/
+    .bullets-section .bullet-point {
+        margin: 1rem auto;
+        padding: 0.5rem;
     }
 
 /*----------------------------------------------------------
 PRODUCTS PROOF
 ----------------------------------------------------------*/
+    .section-background.prd {
+        margin-top: 1rem;
+        min-height: 200vh;
+    }
+
+    .section-background.prd section {
+        margin: 1rem auto;
+    }    
+
     .products-proof .product-section {
         flex-direction: column;
+        align-items: center;
+        margin: auto;
+        height: auto;
+    }
+
+    .products-proof .product-section:nth-of-type(even) {
+        flex-direction: column-reverse;
     }
 
     .products-proof .product-section > div {
         width: 95%;
-        /* height: 100%; */
+        margin: 1rem auto;
     }
+
+    /* Proof side */
+    .proofs > h3 {
+        font-size: 25px;
+    }
+
+    .proofs p {
+        font-weight: 300;
+    }
+
+    /* Product side */
+
 }
