@@ -1,5 +1,7 @@
-var navbar = document.getElementsByTagName("nav")[0];
-var cta = document.getElementsByClassName("right-section")[0]
+const navbar = document.getElementsByTagName("nav")[0];
+const toggler = document.querySelector("nav .toggler i")
+const hiddenMenu = document.querySelector("nav div ul")
+const cta = document.getElementsByClassName("right-section")[0]
 
 
 // When the user scrolls down, XXpx from the top of the document (then 650px), change the navbar color and shadow
@@ -9,6 +11,21 @@ function scrollFunction() {
     } else {
         navbar.style.boxShadow = "none"
     }
+}
+
+// Toggle the navbar 
+function toggleNavbar() {
+    // Change the toggler to the appropriate icon
+    if (toggler.classList.contains("fa-bars"))
+        toggler.classList.replace("fa-bars", "fa-xmark")
+    else 
+        toggler.classList.replace("fa-xmark", "fa-bars")
+
+    // Display the ul containing the menu options
+    if (window.getComputedStyle(hiddenMenu).display === "none")
+        hiddenMenu.style.display = "flex"
+    else
+        hiddenMenu.style.display = "none"
 }
 
 // Event listeners
