@@ -680,13 +680,27 @@ BULLET SECTION(2)
 /*----------------------------------------------------------
 TESTIMONIALS
 ----------------------------------------------------------*/
+    .testimonials {
+        margin-bottom: 1rem;
+    }
+
+    .testimonials i.fa-solid {
+        z-index: 2;
+    }
+
     .testimonials .wrapper {
-        overflow: hidden;
+        /* overflow: hidden; */
         flex-direction: row;
     }
 
     .testimonials .testimonial-card {
-        width: 95%;
+        display: none;
+    }
+
+    .testimonials .testimonial-card:first-of-type {
+        display: block;
+        margin: auto;
+        width: 90%;
     }
 
 }
