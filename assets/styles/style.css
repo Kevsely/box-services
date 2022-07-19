@@ -670,4 +670,23 @@ PRODUCTS PROOF
 
     /* Product side */
 
+/*----------------------------------------------------------
+BULLET SECTION(2)
+----------------------------------------------------------*/
+    section.bullets-section.second {
+        margin: 1rem auto;
+    }
+
+/*----------------------------------------------------------
+TESTIMONIALS
+----------------------------------------------------------*/
+    .testimonials .wrapper {
+        overflow: hidden;
+        flex-direction: row;
+    }
+
+    .testimonials .testimonial-card {
+        width: 95%;
+    }
+
 }
