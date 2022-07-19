@@ -7,6 +7,11 @@ footer {
     font-size: 16px;
 }
 
+footer .top-div {
+    display: flex;
+    justify-content: space-between;
+}
+
 footer .top-div a {
     margin-right: 1.5rem;
 }
@@ -22,8 +27,34 @@ footer a:hover {
     transform: scale(1.1);
 }
 
-footer .top-div {
-    display: flex;
-    justify-content: space-between;
 
+/*----------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+MEDIA QUERIES
+------------------------------------------------------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+@media screen and (max-width: 850px) {
+    footer {
+        padding: 1rem;
+    }
+
+    footer .top-div {
+        flex-direction: column;
+    }
+
+    footer .top-div .left-side > a {
+        display: block;
+        margin: 0.25rem auto;
+    }
+
+    footer .social-media {
+        margin: 0.25rem auto;
+        font-size: 20px;
+    }
+
+    footer hr {
+        margin: 0.5rem auto;
+    }
 }
