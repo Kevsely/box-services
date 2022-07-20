@@ -120,3 +120,54 @@ section.results {
     flex-wrap: wrap;
 }
 
+/*----------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+MEDIA QUERIES
+------------------------------------------------------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+@media screen and (max-width: 850px) {
+/*----------------------------------------------------------
+PRODUCT DESCRIPTION
+----------------------------------------------------------*/
+    .description {
+        margin: 3rem auto 1rem;
+        width: 90%;
+        flex-direction: column-reverse;
+    }
+
+    .description .content {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .description img {
+        width: 100%;
+    }
+
+/*----------------------------------------------------------
+PRODUCT FILTER
+----------------------------------------------------------*/
+    .containers-page-wrapper {
+        margin: 1rem auto;
+        width: 95%;
+        flex-direction: column;
+    }
+
+    /* Filter side */
+    .containers-page-wrapper form {
+        width: 100%;
+    }
+
+    label.radio-tile {
+        display: inline-block;
+        margin: 0.3rem;
+        width: 45%;
+    }
+
+    label.radio-tile .content img {
+        height: auto;
+        width: 35%;
+    }
+}
