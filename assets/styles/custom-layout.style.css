@@ -147,3 +147,41 @@ PRODUCT SECTION
 .layout-page-wrapper .layout.custom {
     cursor: pointer;
 }
+
+/*----------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+MEDIA QUERIES
+------------------------------------------------------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+@media screen and (max-width: 850px) {
+    /*----------------------------------------------------------
+    PRODUCT DESCRIPTION
+    ----------------------------------------------------------*/
+    .description {
+        margin: 3rem auto 1rem;
+        width: 90%;
+        flex-direction: column-reverse;
+    }
+
+    .description .content {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .description img {
+        width: 100%;
+    }
+
+    .layout-page-wrapper {
+        margin: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .layout-page-wrapper .layout {
+        margin: 0.5rem;
+    }
+}
