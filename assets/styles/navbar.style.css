@@ -143,9 +143,29 @@ nav .right-section a {
         width: fit-content;
     }
 
-    nav .right-section {
-        display: none;
+    nav .right-section.floating {
+        display: inline;
         position: absolute;
-        bottom: 0;
+        bottom: -50%;
+        right: 2.5rem;
+        border-radius: 50%;
+        padding: 0.8rem;
+        /* transform: translateY(50%); */
+    }
+    
+    nav .right-section.floating .cart-icon {
+        margin-right: 0;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    nav .right-section.floating #cart-text {
+        display: none;
+    }
+    
+    nav .right-section {
+        margin: auto 1rem;
+        width: fit-content;
+        justify-content: center;
     }
 }

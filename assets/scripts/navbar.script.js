@@ -22,10 +22,14 @@ function toggleNavbar() {
         toggler.classList.replace("fa-xmark", "fa-bars")
 
     // Display the ul containing the menu options
-    if (window.getComputedStyle(hiddenMenu).display === "none")
+    if (window.getComputedStyle(hiddenMenu).display === "none") {
         hiddenMenu.style.display = "flex"
-    else
+        cta.classList.remove("floating")
+    }
+    else {
         hiddenMenu.style.display = "none"
+        cta.classList.add("floating")
+    }
 }
 
 // Event listeners
