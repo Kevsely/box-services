@@ -42,43 +42,45 @@
         <form action="">
             <!-- Quotation table -->
             <h1>RÉCAPITULATIF DE LA DEMANDE DE DEVIS</h1>
-            <table class="quotation">
-                <thead>
-                    <tr>
-                        <th>N°</th>
-                        <th>Aperçu</th>
-                        <th>Désignation</th>
-                        <th>Prix Unit. <br>(estimé)</th>
-                        <th>Quantité</th>
-                        <th>Prix Total <br>(estimé)</th>
-                    </tr>
-                </thead>
-                <tbody class="quotation-body">
-                    <!-- <tr>
-                        <td>01</td>
-                        <td><img src="assets/img/container1.png" alt=""></td>
-                        <td>Conteneur maritime de stockage « standard » 6 pieds</td>
-                        <td>3900€</td>
-                        <td>02</td>
-                        <td>7800€</td>
-                        <td><i class="fa-solid fa-trash-can" onclick="removeElement(this.parentElement.parentElement)"></i></td>
-                    </tr> -->
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="5">Total Hors Taxes</td>
-                        <td id="totalEstimation">0.00 €</td>
-                    </tr>
-                    <tr>
-                        <td colspan="5">Frais de port</td>
-                        <td>Sur Devis</td>
-                    </tr>
-                    <tr>
-                        <td colspan="5">Total TTC</td>
-                        <td>Sur Devis</td>
-                    </tr>
-                </tfoot>
-            </table>
+            <div class="quotation-wrapper">
+                <table class="quotation">
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Aperçu</th>
+                            <th>Désignation</th>
+                            <th>Prix Unit. <br>(estimé)</th>
+                            <th>Quantité</th>
+                            <th>Prix Total <br>(estimé)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="quotation-body">
+                        <!-- <tr>
+                            <td>01</td>
+                            <td><img src="assets/img/container1.png" alt=""></td>
+                            <td>Conteneur maritime de stockage « standard » 6 pieds</td>
+                            <td>3900€</td>
+                            <td>02</td>
+                            <td>7800€</td>
+                            <td><i class="fa-solid fa-trash-can" onclick="removeElement(this.parentElement.parentElement)"></i></td>
+                        </tr> -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">Total Hors Taxes</td>
+                            <td id="totalEstimation">0.00 €</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">Frais de port</td>
+                            <td>Sur Devis</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">Total TTC</td>
+                            <td>Sur Devis</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
             <!-- Warning -->
             <span class="warning">Ceci est une <strong>estimation</strong>. Veuillez remplir le formulaire ci-dessous pour recevoir un devis plus précis</span>
             <!-- Order description -->
